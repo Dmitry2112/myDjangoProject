@@ -132,3 +132,17 @@ table, th, td {
     position: relative;
     float: right;
 }
+
+.skills-img {
+    width: 50px;
+}
+
+.skills-img-active {
+    width: 500px;
+}
+
+.text-hint {
+    float: right;
+    font-size: 25px;
+    margin-right: 15px;
+}

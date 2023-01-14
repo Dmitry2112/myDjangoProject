@@ -3,6 +3,7 @@
 {% block title %}Навыки{% endblock %}
 {% block content %}
     <h1>Навыки</h1>
+    <p class="text-hint">Кликните на график, чтобы увеличить изображение</p>
     <table>
         <tr>
             <th>Год</th>
@@ -10,31 +11,32 @@
         </tr>
         <tr>
             <td>2016</td>
-            <td><img src="{{ skills_statistics.graph_1.url }}"></td>
+            <td><img class="skills-img" src="{{ skills_statistics.graph_1.url }}" alt="Диаграмма с навыками"></td>
         </tr>
         <tr>
             <td>2017</td>
-            <td><img src="{{ skills_statistics.graph_2.url }}"></td>
+            <td><img class="skills-img" src="{{ skills_statistics.graph_2.url }}" alt="Диаграмма с навыками"></td>
         </tr>
         <tr>
             <td>2018</td>
-            <td><img src="{{ skills_statistics.graph_3.url }}"></td>
+            <td><img class="skills-img" src="{{ skills_statistics.graph_3.url }}" alt="Диаграмма с навыками"></td>
         </tr>
         <tr>
             <td>2019</td>
-            <td><img src="{{ skills_statistics.graph_4.url }}"></td>
+            <td><img class="skills-img" src="{{ skills_statistics.graph_4.url }}" alt="Диаграмма с навыками"></td>
         </tr>
         <tr>
             <td>2020</td>
-            <td><img src="{{ skills_statistics.graph_5.url }}"></td>
+            <td><img class="skills-img" src="{{ skills_statistics.graph_5.url }}" alt="Диаграмма с навыками"></td>
         </tr>
         <tr>
             <td>2021</td>
-            <td><img src="{{ skills_statistics.graph_6.url }}"></td>
+            <td><img class="skills-img" src="{{ skills_statistics.graph_6.url }}" alt="Диаграмма с навыками"></td>
         </tr>
             <tr>
             <td>2022</td>
-            <td><img src="{{ skills_statistics.graph_7.url }}"></td>
+            <td><img class="skills-img" src="{{ skills_statistics.graph_7.url }}" alt="Диаграмма с навыками"></td>
         </tr>
     </table>
+    <script src="../../static/app1/js/imgLogic.js"></script>
 {% endblock %}

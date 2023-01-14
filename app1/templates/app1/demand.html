@@ -4,10 +4,6 @@
 {% block content %}
     <h1>Востребованность</h1>
     <h2>Аналитика по зарплатам и количеству вакансий для профессии C# разработчик</h2>
-{#    <img src="../../static/app1/img/{{ demand_statistics.graph }}">#}
     <img src="{{ demand_statistics.graph.url }}">
     {{ demand_statistics.tables|safe }}
-
-{#    <img src="../../static/app1/img/graph1.png" alt="Графики с динамикой вакансий по годам">#}
-{#    <h3>Статистика по годам</h3><table><tr><th>Год</th><th>Средняя зарплата</th><th>Средняя зарплата - C# разработчик</th><th>Количество вакансий</th><th>Количество вакансий - C# разработчик</th></tr><tr><td>2015</td><td>57259</td><td>108652</td><td>9358</td><td>4</td></tr><tr><td>2016</td><td>67729</td><td>94930</td><td>28916</td><td>17</td></tr><tr><td>2017</td><td>69632</td><td>90875</td><td>38682</td><td>20</td></tr><tr><td>2018</td><td>91804</td><td>91152</td><td>58478</td><td>35</td></tr><tr><td>2019</td><td>79153</td><td>99694</td><td>70559</td><td>56</td></tr><tr><td>2020</td><td>75569</td><td>109167</td><td>87249</td><td>79</td></tr><tr><td>2021</td><td>86650</td><td>124414</td><td>54116</td><td>44</td></tr><tr><td>2022</td><td>102513</td><td>248442</td><td>17030</td><td>21</td></tr></table>#}
 {% endblock %}
