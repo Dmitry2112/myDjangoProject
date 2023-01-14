@@ -1,0 +1,17 @@
+{% extends 'app1/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+{% block content %}
+    <h1>Кто такой C# разработчик?</h1>
+    <img class="programmer-img" src="../../static/app1/img/programmer1.jpg" alt="Картинка программиста">
+    {% for el in introduction %}
+        <p>{{ el }}</p>
+    {% endfor %}
+
+    {% for el in main_text %}
+        <p>{{ el }}</p>
+    {% endfor %}
+
+    <h2>Выводы</h2>
+    <p>{{ conclusion }}</p>
+{% endblock %}

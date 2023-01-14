@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'app1/css/app1.css' %}">
+</head>
+<body>
+    <aside>
+        <div class="logo-container">
+            <img class="logo-img" src="{% static 'app1/img/logo.svg' %}" alt="Лого">
+            <span class="logo">разработчик</span>
+        </div>
+        <h3>Навигация</h3>
+        <ul>
+            <li>
+                <div class="nav-container">
+                    <img class="nav-img" src="{% static 'app1/img/home.svg' %}" alt="Главная">
+                    <a href="{% url 'main' %}"> Главная</a>
+                </div>
+            </li>
+            <li>
+                <div class="nav-container">
+                    <img class="nav-img" src="{% static 'app1/img/demand.svg' %}" alt="Востребованность">
+                    <a href="{% url 'demand' %}"> Востребованность</a>
+                </div>
+            </li>
+            <li>
+                <div class="nav-container">
+                    <img class="nav-img" src="{% static 'app1/img/geography.svg' %}" alt="География">
+                    <a href="{% url 'geography' %}"> География</a>
+                </div>
+            </li>
+            <li>
+                <div class="nav-container">
+                    <img class="nav-img" src="{% static 'app1/img/skills.svg' %}" alt="Навыки">
+                    <a href="{% url 'skills' %}"> Навыки</a>
+                </div>
+            </li>
+            <li>
+                <div class="nav-container">
+                    <img class="nav-img" src="{% static 'app1/img/latest_vacancies.svg' %}" alt="Последние вакансии">
+                    <a href="{% url 'latest_vacancies' %}"> Последние вакансии</a>
+                </div>
+            </li>
+        </ul>
+    </aside>
+    <header class="header-container">
+        <div class="header-container">
+            <h1 class="title">С# разработчик</h1>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer class="footer_descr">
+        <p class="footer_text">Козаченко Дмитрий Сергеевич</p>
+        <p class="footer_text">РИ-210944</p>
+    </footer>
+</body>
+</html>

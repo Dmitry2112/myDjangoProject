@@ -1,0 +1,18 @@
+{% extends 'app1/layout.html' %}
+
+{% block title %}География{% endblock %}
+{% block content %}
+    <h1>География</h1>
+    <img src="{{ geography_statistics.graph.url }}" alt="Графики с динамикой вакансий по городам">
+    <h3>Статистика по городам</h3>
+
+    <div class="city-stat">
+        <div class="tbl-1">
+            {{ geography_statistics.table_first|safe }}
+        </div>
+
+        <div class="tbl-2">
+            {{ geography_statistics.table_second|safe }}
+        </div>
+    </div>
+{% endblock %}

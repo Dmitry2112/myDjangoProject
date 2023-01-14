@@ -1,0 +1,134 @@
+body {
+    background-color: #9ddba2;
+    font-size: 18px;
+}
+
+.title {
+    float: right;
+    color: #305c3f;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 400px;
+}
+.header-container {
+    align-items: center;
+    width: 100%;
+    height: 91px;
+    background-color: #fff;
+    padding: 0 96px 0 75px;
+}
+
+.footer_descr {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    flex-direction: column;
+}
+
+.footer_text {
+    margin: 0;
+    color: #252B42;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+main {
+    height: 103vh;
+}
+
+aside {
+    float: left;
+    background: #085e17;
+    width: 20%;
+    padding: 2.5%;
+    height: 115vh;
+    color: #fff;
+    border-right: 3px solid #000;
+}
+
+aside .logo {
+    font-size: 26px;
+    margin-left: 3px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+.logo-img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.nav-logo {
+    display: flex;
+}
+
+aside h3 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li {
+    color: black;
+    display: block;
+    margin-top: 15px;
+    margin-left: 0;
+    transition: transform .3s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #252B42;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+.city-stat {
+    display: flex;
+    gap: 30px;
+}
+
+.tbl-1 table {
+    float: left;
+    width: 500px;
+}
+
+.tbl-2 table {
+    float: right;
+    width: 500px;
+}
+
+.programmer-img {
+    width: 500px;
+    position: relative;
+    float: right;
+}
