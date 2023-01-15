@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from api_collector import ApiCollector
 from app1.models import DemandStatistics, GeographyStatistics, SkillsStatistics
 
 
@@ -56,5 +57,9 @@ def skills(request):
 
 
 def latest_vacancies(request):
-    return render(request, 'app1/latest-vacancies.html')
+    df = ApiCollector.parse_response()
+    data = {
+        'df': df.to_html()
+    }
+    return render(request, 'app1/latest-vacancies.html', context=data)
 
